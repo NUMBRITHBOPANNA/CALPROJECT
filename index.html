@@ -6,6 +6,12 @@
 <script src="Sub.js"></script>
 <script src="Mul.js"></script>
 <script src="Div.js"></script>
+<script>
+function add() 
+{
+  document.getElementById("num3").value = document.getElementById("num1").value;
+}
+</script>
 <body>
 <form align="center">
  <table border="5" width="20%" align="center">
@@ -14,7 +20,7 @@
 					<td><input type="text" id="num1"></td><br>
                 </tr>
                 <tr>
-                    	<td><label >Second number	</label></td>
+                    	<td><label >Second number</label></td>
 					<td><input type="text" id="num2"></td><br>
                 </tr>
                 <tr>
@@ -23,10 +29,10 @@
                 </tr>
  			<tr>
                     <td colspan="2" align="center">
-                        <input type="button" value="Add" onclick="add()" >
-                        <input type="button" value="Sub" onclick="sub()">
-					 <input type="button" value="Mul" onclick="mul()">
-					 <input type="button" value="Div" onclick="div()">
+                        <input type="button" value="Add" onclick="getElementById('Add').innerHTML=add()" >
+                        <input type="button" value="Sub" onclick="getElementById('Sub').innerHTML=sub()">
+					 <input type="button" value="Mul" onclick="getElementById('Mul').innerHTML=mul()">
+					 <input type="button" value="Div" onclick="getElementById('Div').innerHTML=div()">
 					 <input type="reset">
                     </td>
 			</tr>
